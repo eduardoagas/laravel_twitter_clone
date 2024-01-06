@@ -1,1 +1,6 @@
+[run server]
 php artisan serve
+
+
+[create controller]
+php artisan make:controller DashboardController
