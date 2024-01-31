@@ -1,6 +1,27 @@
+ composer create-project laravel/laravel twitter_clone
+
+?? composer install --no-scripts
+
+php artisan key:generate
+
 [run server]
 php artisan serve
 
 
 [create controller]
 php artisan make:controller DashboardController
+
+[create database]
+mysql -u root -p
+create database zubumafu
+
+[migrate]
+php artisan migrate
+
+[create migrate]
+php artisan make:migration create_ideas_table
+
+[create model]
+php artisan make:model Idea
+
+for templating, add all folders in public
